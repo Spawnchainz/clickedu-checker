@@ -17,7 +17,7 @@ for line in content:
 
     ## Obtener el PHPSESSID
 
-    url1 = "https://escolarosaliadecastro.clickedu.eu/students/la_meva_classe.php"
+    url1 = "https://jesussalvador.clickedu.eu/user.php?action=login"
     r1 = str(requests.get(url1).cookies)
     PHPSESSID = re.search(r"PHPSESSID=\w*", r1).group().split("=")[1]
 
